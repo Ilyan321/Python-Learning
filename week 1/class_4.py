@@ -29,7 +29,7 @@ else:
 #    he movie rates
 
 ticket=int(input("Enter your age to know the ticket price: "))
-if (ticket<10):
+if (ticket<=10):
     print("You are free kid.")
 elif(ticket>10 and ticket<60):
     print("Your ticket price is $50.")
