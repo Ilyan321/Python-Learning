@@ -22,10 +22,3 @@ Navigate into the Week folders to see the specific .py scripts.
 You can also find screenshots of the code and their terminal outputs to see the programs in action.
 
 Author: Ilyan Khan Serial Number: 20
-
-💡 Why this works for you:
-Organized: It clearly links to your existing week 1 and week 2 folders.
-
-Professional: It uses clean Markdown formatting (bolding, headers, and bullet points) to make it easy for recruiters or peers to read.
-
-Honest: It accurately reflects that Week 2 is your current next step.
