@@ -10,3 +10,6 @@ index=0
 for i in list:
     print(index, " ", i)
     index+=1
+    
+sqr=[x**2 for x in range(1,6)]
+print(sqr)
