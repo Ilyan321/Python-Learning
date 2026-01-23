@@ -15,20 +15,20 @@ This week was all about building a solid foundation. I focused on basic syntax, 
 
 ### 📁 Week 2: Leveling Up 🚀
 This week, I focused on advanced logic, matrix operations, and building more complex interactive programs.
-* [cite_start]**Mega Project 1 (Prime Finder):** Identifies all prime numbers within a user-defined range[cite: 3, 4, 15].
-* [cite_start]**Mega Project 2 (Matrix Maniupulation):** Handles 2D lists to calculate sums for both rows and columns[cite: 55, 64, 72].
-* [cite_start]**Mega Project 3 (Number Guessing 2.0):** An interactive game featuring a scoring system and round management[cite: 117, 131, 133].
-* [cite_start]**To-Do List App:** A CLI application to add, view, and clear tasks efficiently[cite: 156].
-* [cite_start]**Concepts Mastered:** Nested loops, 2D list indexing, and library integration (random)[cite: 119, 127, 152].
+* **Mega Project 1 (Prime Finder):** Identifies all prime numbers within a user-defined range[cite: 3, 4, 15].
+* **Mega Project 2 (Matrix Maniupulation):** Handles 2D lists to calculate sums for both rows and columns[cite: 55, 64, 72].
+* **Mega Project 3 (Number Guessing 2.0):** An interactive game featuring a scoring system and round management[cite: 117, 131, 133].
+* **To-Do List App:** A CLI application to add, view, and clear tasks efficiently[cite: 156].
+* **Concepts Mastered:** Nested loops, 2D list indexing, and library integration (random)[cite: 119, 127, 152].
 
 ---
 
 ## 🛠️ How to Explore
 * **Navigate** into the specific Week folders to see the `.py` scripts.
-* [cite_start]**Outputs:** You can find screenshots of the code and their terminal outputs within the repository to see the programs in action[cite: 41, 143].
+* **Outputs:** You can find screenshots of the code and their terminal outputs within the repository to see the programs in action[cite: 41, 143].
 
 ---
 
-[cite_start]**Author:** Ilyan Khan [cite: 42]  
-[cite_start]**Serial Number:** 20 [cite: 125]  
-[cite_start]**Department:** Computer Systems Engineering [cite: 51]
+**Author:** Ilyan Khan [cite: 42]  
+**Serial Number:** 20 [cite: 125]  
+**Department:** Computer Systems Engineering [cite: 51]
