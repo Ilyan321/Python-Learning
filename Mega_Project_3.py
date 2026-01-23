@@ -1,8 +1,9 @@
 import random
 score=int(0)
+guess=random.randint(1,10)
+
 print("---------------Number Guessing Game---------------")
 for i in range (3):
-    guess=random.randint(1,10)
     print("The computer guessed:",guess)
 
     num=int(input("Enter a number between 1 and 10: "))
