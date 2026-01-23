@@ -31,6 +31,6 @@ This week, I focused on advanced logic, matrix operations, and building more com
 
 **Author:** Ilyan Khan
 
-**Serial Number:** 20
+**Serial Number:** 24CSE24
 
 **Department:** Computer Systems Engineering
