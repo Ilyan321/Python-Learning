@@ -8,9 +8,27 @@ while True:
         contact[name]=phone
         print("Contact Added Successfully.")
     elif choice==2:
-        # print("Contacts List:")
-        # for name,phone in contact.items():
-        #     print("Name: ",name," Phone: ",phone)
-        print(contact)
+        print("Contacts List:")
+        for name,phone in contact.items():
+            print("Name: ",name," Phone: ",phone)
     elif choice==3:
+        #search
+        search_name=input("Enter the name to search: ")
+        if search_name in contact:
+            print("Contact Found: ",search_name," Phone: ",contact[search_name])
+        else:
+            print("Contact Not Found.")
+    elif choice==4:
         break
+    else: 
+        print("Invalid Choice. Please try again.")
+
+
+
+
+
+
+
+
+
+
