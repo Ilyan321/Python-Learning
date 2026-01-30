@@ -22,10 +22,11 @@
 #     print("the 'try except' is finished")
 
 def name(name):
-    if type(name) != str:
-        raise TypeError ("Only strings are allowed")
+    # if type(name) != str:
+        # raise TypeError ("Only strings are allowed")
+        assert type(name) != str, "Only strings are allowed" #without exception
     
-try: 
-    name(123)
-except TypeError as e:
-    print(e)
+# try: 
+#     name(123)
+# except AssertionError as e:
+#     print(e)
