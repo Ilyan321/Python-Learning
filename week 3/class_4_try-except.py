@@ -1,5 +1,4 @@
 try:
-    x=1
     print(x)
 except NameError:
     print("variable not defined")
