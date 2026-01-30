@@ -1,6 +1,6 @@
 contact={}
 while True:
-    print("1.Add Contact(name,phone)\n2.View Contact\n3.Exit")
+    print("1.Add Contact(name,phone)\n2.View Contact\n3.Search Contact\n4.Exit")
     choice=int(input("Enter your choice: "))
     if choice==1:
         name=input("Enter Name: ")
