@@ -39,7 +39,7 @@ An interactive calculator that persists until the user chooses to exit.
 1. Ensure you have Python 3.x installed.
 2. Clone the repository:
    ```bash
-   git clone [https://github.com/Ilyan321/Python-Learning.git](https://github.com/Ilyan321/Python-Learning.git)```
+   git clone https://github.com/Ilyan321/Python-Learning.git```
 3. Navigate to the week 3 directory.
 4. Run any project using:
    ```bash
