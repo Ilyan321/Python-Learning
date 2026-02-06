@@ -10,4 +10,5 @@ while True:
         tasks.remove()
     elif choice==4:
         break
-
+    else:
+        print("404 Error. Try Again\n")
