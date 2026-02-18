@@ -20,10 +20,12 @@ class Student(Person):
         print(greet,"From Student class",self.name,self.age)
 
     
+def Display(Person):
+        print("From Student class",Person.name,Person.age)
 
 # p1=Person("Ilyan",19)
 # p1.display()
 p2=Ilyan("Damon",165,7)
-p2.display()
-p3=Student("Ilyan",19)
-p3.display()
+Display(p2)
+p3=Student("Elijah",1065)
+Display(p3)
