@@ -15,9 +15,12 @@ class Ilyan(Person):       #inherited fron Person
     def display(self):
         print("Fron ilyan class",self.name,self.age,self.height)
 
-class Student(Person):
-    def display(self,greet="Hello"):
-        print(greet,"From Student class",self.name,self.age)
+class Student(Ilyan):
+
+    def __init__(self,Person):
+        super().__init__(Person.name,Person.age,Person.height)
+    # def display(self,greet="Hello"):
+    #     print(greet,"From Student class",self.name,self.age)
 
     
 def Display(Person):
@@ -25,7 +28,7 @@ def Display(Person):
 
 # p1=Person("Ilyan",19)
 # p1.display()
-p2=Ilyan("Damon",165,7)
+p2=Ilyan("Ilyan",19,170)
 Display(p2)
-p3=Student("Elijah",1065)
+p3=Student(p2)
 Display(p3)
