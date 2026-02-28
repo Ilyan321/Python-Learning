@@ -23,7 +23,8 @@ A professional web application built with **Python** and **Streamlit** that util
 ## 🚀 Installation & Setup
 
 1. Clone the Project:
-   ```git clone https://github.com/Ilyan321/Python-Learning/blob/main/Project/main.py```
+   ```git clone https://github.com/Ilyan321/Python-Learning.git```
+   ```cd Project```
 
 2. Install Dependencies:
    pip install streamlit requests
