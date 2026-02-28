@@ -23,14 +23,13 @@ A professional web application built with **Python** and **Streamlit** that util
 ## 🚀 Installation & Setup
 
 1. Clone the Project:
-   ```git clone https://github.com/Ilyan321/github-profile-fetcher.git```
-   ```cd github-profile-fetcher```
+   ```git clone https://github.com/Ilyan321/Python-Learning/blob/main/Project/main.py```
 
 2. Install Dependencies:
    pip install streamlit requests
 
 3. Run the Application:
-   streamlit run app.py
+   streamlit run main.py
 
 ---
 
