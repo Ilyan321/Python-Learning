@@ -1,5 +1,7 @@
 # Github Profile fetcher
 import requests
+import streamlit as st
+st.title("Github Profile Fetcher")
 
 def fetch_github(username):
     url="https://api.github.com/users/"+username
@@ -8,40 +10,64 @@ def fetch_github(username):
         header={"User-Agent":"Ilyan321"}
         response=requests.get(url,headers=header)
 
-
         if response.status_code==200:
             data=response.json()
-            print("Name:",data.get("name","N/A"))
-            print("ID:",data.get("id","N/A"))
-            print("Bio:",data.get("bio","N/A"))
-            print("Profile URL:",data.get("html_url","N/A"))
-            print("Profile Picture URL:",data.get("avatar_url","N/A"))
-            print("Public Repos:",data.get("public_repos","N/A"))
-            print("Followers:",data.get("followers","N/A"))
-            print("Following:",data.get("following","N/A"))
-            print("Location:",data.get("location","N/A"))
-            print("Company:",data.get("company","N/A"))
+
+            avatar_url=data.get("avatar_url","N/A")
+            if avatar_url:
+                st.image(avatar_url,width=150)
+
+
+            st.subheader(data.get("name","N/A"))
+            st.write(data.get("bio","N/A"))
+
+            col1,col2,col3=st.columns(3)
+            with col1:
+                st.metric("Public Repos",data.get("public_repos","N/A"))
+            with col2:
+                st.metric("Followers",data.get("followers","N/A"))
+            with col3:
+                    st.metric("Following",data.get("following","N/A"))
+
+            st.write("ID: ",data.get("id","N/A"))
+            st.markdown("ProfileURL:",data.get("html_url","#"))
+            st.write("Location: ",data.get("location","N/A"))
+            st.write("Company: ",data.get("company","N/A"))
+
+
+
+
+
+
+
+
+            # print("Name:",data.get("name","N/A"))
+            # print("ID:",data.get("id","N/A"))
+            # print("Bio:",data.get("bio","N/A"))
+            # print("Profile URL:",data.get("html_url","N/A"))
+            # print("Profile Picture URL:",data.get("avatar_url","N/A"))
+            # print("Public Repos:",data.get("public_repos","N/A"))
+            # print("Followers:",data.get("followers","N/A"))
+            # print("Following:",data.get("following","N/A"))
+            # print("Location:",data.get("location","N/A"))
+            # print("Company:",data.get("company","N/A"))
         elif response.status_code==404:
-            print("404 Error: User not found.")
+            st.error("User Not Found.")
         else:
-            print("Error fetching data. Status code:",response.status_code)
+           st.error("Failed to fetch data.")
     except Exception as e:
-        print("An Error Occured:",e)
+        st.error("An error occured. Response code: "+str(e))
 
 
 
 
 
 
+st.write("----------------------------------------")
+username=st.text_input("Enter Github Username: ")
 
-while True:
-    choice=int(input("1.Fetch Github Profile.\n2.Exit.\nEnter your choice: "))
-    if choice==1:
+if st.button("Fetch Profile"):
+    if username:
+        fetch_github(username)
+    else:st.warning("Please eneter a username.")
 
-        user=input("Enter Github username: ")
-        fetch_github(user)
-    elif choice==2:
-        print("Exiting...")
-        break
-    else:
-        print("Invalid choice. Please try again.")
