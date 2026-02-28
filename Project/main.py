@@ -1,6 +1,7 @@
 # Github Profile fetcher
 import requests
 import streamlit as st
+
 st.title("Github Profile Fetcher")
 
 def fetch_github(username):
