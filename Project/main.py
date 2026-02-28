@@ -44,10 +44,6 @@ def fetch_github(username):
         st.error("An error occured. Response code: "+str(e))
 
 
-
-
-
-
 st.write("----------------------------------------")
 username=st.text_input("Enter Github Username: ")
 
