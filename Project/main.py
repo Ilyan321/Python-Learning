@@ -1,6 +1,5 @@
-# Github Profile fetcher
 import requests
-import streamlit as st
+import streamlit as st  
 
 st.title("Github Profile Fetcher")
 
@@ -45,7 +44,11 @@ def fetch_github(username):
         st.error("An error occured. Response code: "+str(e))
 
 
-st.write("--------------------------------------------------------------------------")
+
+
+
+
+st.write("----------------------------------------")
 username=st.text_input("Enter Github Username: ")
 
 if st.button("Fetch Profile"):
