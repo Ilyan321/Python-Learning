@@ -2,7 +2,6 @@
 import requests
 
 def fetch_github(username):
-    username="Ilyan321"
     url="https://api.github.com/users/"+username
 
     try:
@@ -16,6 +15,7 @@ def fetch_github(username):
             print("ID:",data.get("id","N/A"))
             print("Bio:",data.get("bio","N/A"))
             print("Profile URL:",data.get("html_url","N/A"))
+            print("Profile Picture URL:",data.get("avatar_url","N/A"))
             print("Public Repos:",data.get("public_repos","N/A"))
             print("Followers:",data.get("followers","N/A"))
             print("Following:",data.get("following","N/A"))
@@ -29,5 +29,19 @@ def fetch_github(username):
         print("An Error Occured:",e)
 
 
-user=input("Enter Github username: ")
-fetch_github(user)
+
+
+
+
+
+while True:
+    choice=int(input("1.Fetch Github Profile.\n2.Exit.\nEnter your choice: "))
+    if choice==1:
+
+        user=input("Enter Github username: ")
+        fetch_github(user)
+    elif choice==2:
+        print("Exiting...")
+        break
+    else:
+        print("Invalid choice. Please try again.")
