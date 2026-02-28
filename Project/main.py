@@ -31,27 +31,12 @@ def fetch_github(username):
                     st.metric("Following",data.get("following","N/A"))
 
             st.write("ID: ",data.get("id","N/A"))
-            st.markdown("ProfileURL:",data.get("html_url","#"))
+            st.markdown("Profile URL:"+data.get("html_url","#"))
+            email=data.get("email") or "Not provided"
+            st.markdown("Email: "+email)
             st.write("Location: ",data.get("location","N/A"))
             st.write("Company: ",data.get("company","N/A"))
 
-
-
-
-
-
-
-
-            # print("Name:",data.get("name","N/A"))
-            # print("ID:",data.get("id","N/A"))
-            # print("Bio:",data.get("bio","N/A"))
-            # print("Profile URL:",data.get("html_url","N/A"))
-            # print("Profile Picture URL:",data.get("avatar_url","N/A"))
-            # print("Public Repos:",data.get("public_repos","N/A"))
-            # print("Followers:",data.get("followers","N/A"))
-            # print("Following:",data.get("following","N/A"))
-            # print("Location:",data.get("location","N/A"))
-            # print("Company:",data.get("company","N/A"))
         elif response.status_code==404:
             st.error("User Not Found.")
         else:
@@ -70,5 +55,6 @@ username=st.text_input("Enter Github Username: ")
 if st.button("Fetch Profile"):
     if username:
         fetch_github(username)
-    else:st.warning("Please eneter a username.")
+    else:
+        st.warning("Please eneter a username.")
 
