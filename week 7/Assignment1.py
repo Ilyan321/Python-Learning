@@ -1,3 +1,10 @@
+#Assignment Task:
+            #Task Completion Visualization
+#Write a Python program that uses `matplotlib` to:
+#1. Create a bar chart to visualize the task completion rate.
+#2. Use a pie chart to visualize task priorities.
+#3. Create a line chart to show task completion over time.
+
 import matplotlib.pyplot as plt
 
 categories = ['Completed', 'In Progress', 'Pending']

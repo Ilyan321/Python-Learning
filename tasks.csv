@@ -1,0 +1,16 @@
+Task_ID,Task_Name,Priority,Status
+101,Design Homepage,High,Completed
+102,Setup Database,High,In Progress
+103,Write Documentation,Low,Pending
+104,Fix Login Bug,High,Completed
+105,Update Logo,Medium,In Progress
+106,Client Meeting,High,Pending
+107,Server Maintenance,Medium,Completed
+108,Email Marketing Campaign,Low,Pending
+109,Optimize Images,Medium,Completed
+110,Deploy V1.0,High,In Progress
+111,Update Privacy Policy,Low,Completed
+112,Hire Junior Developer,High,Pending
+113,Monthly Analytics Report,Medium,In Progress
+114,Fix Mobile UI,High,Completed
+115,Research Competitors,Low,Pending
